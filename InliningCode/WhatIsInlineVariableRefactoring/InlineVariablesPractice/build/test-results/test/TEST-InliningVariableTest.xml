@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InliningVariableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-16T21:41:03" hostname="LAPTOP-PANUHIN" time="14.211">
+  <properties/>
+  <testcase name="testVariablesInlined()" classname="InliningVariableTest" time="14.211"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

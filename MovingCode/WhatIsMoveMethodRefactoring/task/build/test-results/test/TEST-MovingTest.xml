@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MovingTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-03-16T21:18:18" hostname="LAPTOP-PANUHIN" time="7.204">
+  <properties/>
+  <testcase name="testStartMethodMovedToCarClass()" classname="MovingTest" time="6.541"/>
+  <testcase name="carClassTest()" classname="MovingTest" time="0.095"/>
+  <testcase name="driverClassTest()" classname="MovingTest" time="0.024"/>
+  <testcase name="testStopMethodMovedToCarClass()" classname="MovingTest" time="0.537"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

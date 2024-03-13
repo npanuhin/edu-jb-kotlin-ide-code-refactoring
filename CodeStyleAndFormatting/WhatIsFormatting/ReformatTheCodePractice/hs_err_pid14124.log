@@ -1,0 +1,203 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for Failed to commit area from 0x00000000d1200000 to 0x00000000d9200000 of length 134217728.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (src/hotspot/os/windows/os_windows.cpp:3624), pid=14124, tid=5192
+#
+# JRE version:  (11.0.14.1+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.14.1+1-b2043.45, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Didea.config.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\config-test -Didea.force.use.core.classloader=true -Didea.log.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\system-test\log -Didea.plugins.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\plugins-test -Didea.required.plugins.id -Didea.system.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\system-test -Didea.use.core.classloader.for -Didea.use.core.classloader.for.plugin.path=true -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Djdk.attach.allowAttachSelf=true -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.module.illegalAccess.silent=true -Dorg.gradle.internal.worker.tmpdir=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\tmp\test\work -Dorg.gradle.native=false -Dplugin.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\plugins-test\CodeStyleAndFormatting-WhatIsFormatting-ReformatTheCodePractice -Dsun.io.useCanonCaches=false -XX:ReservedCodeCacheSize=512m -XX:+IgnoreUnrecognizedVMOptions -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -javaagent:C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\tmp\initializeIntelliJPlugin\coroutines-javaagent.jar --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.base/sun.net.dns=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=java.desktop/com.sun.java.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED --add-opens=java.desktop/sun.awt.windows=ALL-UNNAMED -Xms128m -Xmx750m -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+
+Host: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 4 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Wed Mar 13 23:20:34 2024 �������� ������ (����) elapsed time: 0.032008 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000021d0ff3f800):  JavaThread "Unknown thread" [_thread_in_vm, id=5192, stack(0x000000bb73800000,0x000000bb73900000)]
+
+Stack: [0x000000bb73800000,0x000000bb73900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x61618a]
+V  [jvm.dll+0x79c450]
+V  [jvm.dll+0x79da6d]
+V  [jvm.dll+0x79e143]
+V  [jvm.dll+0x24c968]
+V  [jvm.dll+0x6131f4]
+V  [jvm.dll+0x607ef5]
+V  [jvm.dll+0x30b35b]
+V  [jvm.dll+0x30b2ca]
+V  [jvm.dll+0x30b1a2]
+V  [jvm.dll+0x3100f6]
+V  [jvm.dll+0x35b7e3]
+V  [jvm.dll+0x35bee6]
+V  [jvm.dll+0x35b8e3]
+V  [jvm.dll+0x2e5b68]
+V  [jvm.dll+0x2e6d17]
+V  [jvm.dll+0x779087]
+V  [jvm.dll+0x77a87c]
+V  [jvm.dll+0x368d99]
+V  [jvm.dll+0x75c9de]
+V  [jvm.dll+0x3d6d53]
+V  [jvm.dll+0x3d92f1]
+C  [jli.dll+0x536b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000021d0de6fa30, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000021d0ff5e000 GCTaskThread "GC Thread#0" [stack: 0x000000bb73a00000,0x000000bb73b00000] [id=8868]
+  0x0000021d0ff73800 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000bb73b00000,0x000000bb73c00000] [id=5644]
+  0x0000021d0ff75000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000bb73c00000,0x000000bb73d00000] [id=4176]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc904a6177]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000021d0ff3a210] Heap_lock - owner thread: 0x0000021d0ff3f800
+
+Heap address: 0x00000000d1200000, size: 750 MB, Compressed Oops mode: Non-zero based: 0x00000000d1200000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.016 Loaded shared library C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff620420000 - 0x00007ff62042a000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\java.exe
+0x00007ffced5b0000 - 0x00007ffced7a8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffcec6a0000 - 0x00007ffcec75d000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffcead10000 - 0x00007ffceb006000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffce7810000 - 0x00007ffce78a0000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ffceb0d0000 - 0x00007ffceb1d0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffccf500000 - 0x00007ffccf519000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\jli.dll
+0x00007ffceca40000 - 0x00007ffcecbde000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffceb1d0000 - 0x00007ffceb1f2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffcebdd0000 - 0x00007ffcebdfb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffceb320000 - 0x00007ffceb437000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffceac70000 - 0x00007ffcead0d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffccf190000 - 0x00007ffccf1a6000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\VCRUNTIME140.dll
+0x00007ffcd5fe0000 - 0x00007ffcd627a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007ffcebf90000 - 0x00007ffcec02e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffcebba0000 - 0x00007ffcebbd2000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffca7a60000 - 0x00007ffca7b0a000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\msvcp140.dll
+0x00007ffc901b0000 - 0x00007ffc90d2a000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\server\jvm.dll
+0x00007ffcec770000 - 0x00007ffcec823000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffced340000 - 0x00007ffced3df000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffcec510000 - 0x00007ffcec636000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffceb010000 - 0x00007ffceb037000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffceb650000 - 0x00007ffceb658000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffcd4730000 - 0x00007ffcd4739000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffcec030000 - 0x00007ffcec09b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffcd9320000 - 0x00007ffcd9347000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffce1260000 - 0x00007ffce126a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffce9470000 - 0x00007ffce9482000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffcc5ad0000 - 0x00007ffcc5ae1000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\verify.dll
+0x00007ffce7ba0000 - 0x00007ffce7d84000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffcd31e0000 - 0x00007ffcd3214000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffceb040000 - 0x00007ffceb0c2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffcc3bf0000 - 0x00007ffcc3c19000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\java.dll
+0x00007ffce2a00000 - 0x00007ffce2a0b000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\jimage.dll
+0x00007ffcdb940000 - 0x00007ffcdb94f000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\instrument.dll
+0x00007ffcc4600000 - 0x00007ffcc4619000 	C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr_jcef-11_0_14_1-windows-x64-b2043.45\extracted\jbr\bin\server
+
+VM Arguments:
+jvm_args: -Didea.config.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\config-test -Didea.force.use.core.classloader=true -Didea.log.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\system-test\log -Didea.plugins.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\plugins-test -Didea.required.plugins.id -Didea.system.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\system-test -Didea.use.core.classloader.for -Didea.use.core.classloader.for.plugin.path=true -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Djdk.attach.allowAttachSelf=true -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.module.illegalAccess.silent=true -Dorg.gradle.internal.worker.tmpdir=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\tmp\test\work -Dorg.gradle.native=false -Dplugin.path=C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\idea-sandbox\plugins-test\CodeStyleAndFormatting-WhatIsFormatting-ReformatTheCodePractice -Dsun.io.useCanonCaches=false -XX:ReservedCodeCacheSize=512m -XX:+IgnoreUnrecognizedVMOptions -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -javaagent:C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\tmp\initializeIntelliJPlugin\coroutines-javaagent.jar --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.base/sun.net.dns=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=java.desktop/com.sun.java.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED --add-opens=java.desktop/sun.awt.windows=ALL-UNNAMED -Xms128m -Xmx750m -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant -ea 
+java_command: worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+java_class_path (initial): C:\Users\panuhin\.gradle\caches\8.0\workerMain\gradle-worker.jar;C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\instrumented\instrumentCode;C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\instrumented\instrumentTestCode;C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\classes\kotlin\test;C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\CodeStyleAndFormatting\WhatIsFormatting\ReformatTheCodePractice\build\classes\kotlin\main;C:\Users\panuhin\Desktop\Problems\Constructor University\Development in JVM Languages\Introduction to IDE Code Refactoring in Kotlin\util\build\libs\util.jar;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\org.jetbrains.academy.test.system\core\2.1.1\9ac20a818ad8bb404cbe4ab6a288644740aa2113\core-2.1.1.jar;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\org.jetbrains.academy.test.system\kotlin-psi\2.1.1\8771be6cfc9a7875d8efa39b7cfa94a1aba11d10\kotlin-psi-2.1.1.jar;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\org.jetbrains.academy.test.system\common\2.1.1\bc6a4395cce1902a79c7dbeb75cb0020c68a1d78\common-2.1.1.jar;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.20\73576ddf378c5b4f1f6b449fe6b119b8183fc078\kotlin-stdlib-jdk8-1.8.20.jar;C:\Users\panuhin\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.9.0\cc1cb5efae97493dcffb687253a0964ad2e7b99\junit-jupiter-engine-5.9.0.jar;C:\Users\panuhin\.gradl
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {command line}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+     bool HeapDumpOnOutOfMemoryError               = true                                   {manageable} {command line}
+     bool IgnoreUnrecognizedVMOptions              = true                                      {product} {command line}
+   size_t InitialHeapSize                          = 134217728                                 {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 786432000                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5825164                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 265522874                              {pd product} {ergonomic}
+     bool OmitStackTraceInFastThrow                = false                                     {product} {command line}
+    uintx ProfiledCodeHeapSize                     = 265522874                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 536870912                              {pd product} {command line}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     intx SoftRefLRUPolicyMSPerMB                  = 50                                        {product} {command line}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {command line}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\PuTTY\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\ffmpeg\bin;C:\Program Files;C:\OpenServer\modules\php\PHP_7.1;C:\MinGW\bin;C:\Program Files\gs\gs9.56.0\bin;C:\Users\panuhin\AppData\Local\Programs\Python\pypy3.8-v7.3.9-win64;C:\Program Files\qpdf 11.1.1\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\CMake\bin;C:\Program Files\platform-tools;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\apache-maven-3.9.2\bin;C:\Program Files\ghc-9.8.1-x86_64-unknown-mingw32\bin;C:\Users\panuhin\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\panuhin\.jdks\openjdk-21.0.2\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\panuhin\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\panuhin\AppData\Local\Programs\Python\Python311\;C:\Users\panuhin\AppData\Local\Programs\Python\Launcher\;C:\Users\panuhin\AppData\Roaming\nvm;C:\Program Files\nodejs
+USERNAME=panuhin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 0 days 0:30 hours
+Hyper-V role detected
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9 microcode 0xf4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 16207M (520M free)
+TotalPageFile size 16207M (AvailPageFile size 41M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 51M, peak: 179M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.14.1+1-b2043.45) for windows-amd64 JRE (11.0.14.1+1-b2043.45), built on Apr 25 2022 05:49:45 by "" with MS VC++ 14.0 (VS2015)
+
+END.

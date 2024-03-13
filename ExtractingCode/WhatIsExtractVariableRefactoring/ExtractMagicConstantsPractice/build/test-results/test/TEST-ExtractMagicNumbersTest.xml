@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ExtractMagicNumbersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-16T21:38:26" hostname="LAPTOP-PANUHIN" time="7.478">
+  <properties/>
+  <testcase name="testExtractedConstant()" classname="ExtractMagicNumbersTest" time="7.478"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
